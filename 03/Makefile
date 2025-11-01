@@ -9,7 +9,7 @@ tests: matrix.o tests.cpp
 test: tests
 	./tests
 
-token_parser.o: matrix.cpp matrix.hpp
+matrix.o: matrix.cpp matrix.hpp
 	$(CC) $(FLAGS) -c matrix.cpp -o matrix.o
 
 clean:
